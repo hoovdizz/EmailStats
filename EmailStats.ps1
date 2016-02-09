@@ -3,7 +3,7 @@
 #https://gallery.technet.microsoft.com/exchange/bb94b422-eb9e-4c53-a454-f7da6ddfb5d6
 
 #02/09/2016 Forked By Alix Hoover,
-#02/09/2016 Made DL Stats file formate name same as Email Stats
+#02/09/2016 Made DL Stats file formate name same as Email Stats (My A.D.D. was kicking in)
 #02/09/2016 Made Stats File Name reflect Search range
 #02/09/2016 Added Start End Date to be prompted by user
 #02/09/2016 Added right click run ability (with error checking)
