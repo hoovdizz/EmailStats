@@ -47,9 +47,9 @@ $enddateX = ([datetime]$enddate).tostring("yyyy_MM_dd")
 
 $ScriptPath = Split-Path -parent $MyInvocation.MyCommand.Definition
 
-$outfile = $ScriptPath +"/MailBox Reports/email_stats_" + $startdateX + " to " + $EndDateX + ".csv" 
+$outfile = $ScriptPath +"\MailBox Reports\email_stats_" + $startdateX + " to " + $EndDateX + ".csv" 
  
-$dl_stat_file = $ScriptPath +"/MailBox Reports/DL_stats____" + $startdateX + " to " + $EndDateX + ".csv" 
+$dl_stat_file = $ScriptPath +"\MailBox Reports\DL_stats____" + $startdateX + " to " + $EndDateX + ".csv" 
  
 $accepted_domains = Get-AcceptedDomain |% {$_.domainname.domain} 
 [regex]$dom_rgx = "`(?i)(?:" + (($accepted_domains |% {"@" + [regex]::escape($_)}) -join "|") + ")$" 
