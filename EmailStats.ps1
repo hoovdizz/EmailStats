@@ -248,7 +248,7 @@ $dl_stats | Export-Csv $dl_stat_file -NoTypeInformation -force
  
  
 Write-Host "`nRun time was $(((get-date) - $today).totalseconds) seconds." 
-Write-Host "Email stats file is $outfile" 
+Write-Host "   Email stats file is $outfile" 
 Write-Host "DL usage stats file is $dl_stat_file" 
  
  
