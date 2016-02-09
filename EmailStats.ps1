@@ -16,6 +16,8 @@
 add-pssnapin Microsoft.Exchange.Management.PowerShell.E2010 -ErrorAction SilentlyContinue
 
 
+Write-Host "Email Per User Stats Report" -foregroundcolor Green
+
 
 Write-Host " Start Date: Format Like > MM/DD/YYYY 12:00 AM  :"  -nonewline
 $startdate = read-host
@@ -26,8 +28,13 @@ $EndDate = read-host
 Write-Host  " "
 Write-Host  " "
 Write-Host  " "
-Write-Host " Please note when looking at this report. 1 Email sent to 5 people is counted as 5 Emails." -foregroundcolor magenta
-write-host " So when looking at the Report see column P for Unique Emails Sent, that email with 5 recipients is counted as 1" -foregroundcolor magenta
+Write-Host  " "
+Write-Host  " "
+Write-Host  " "
+Write-Host  " Please note when looking at this report." -foregroundcolor magenta
+Write-Host  " 1 Email sent to 5 people is counted as 5 Emails." -foregroundcolor magenta
+Write-Host  " But under column P for Unique Emails Sent, that " -foregroundcolor magenta
+Write-Host  " email with 5 recipients is counted as 1 Unique Email." -foregroundcolor magenta
 
  
 $today = get-date 
