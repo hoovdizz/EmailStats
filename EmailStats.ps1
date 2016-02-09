@@ -76,7 +76,7 @@ $dl = @{}
  
 $obj_table = { 
 @" 
-Date = $rundate 
+Date = $enddatex
 User = $($address.split("@")[0]) 
 Domain = $($address.split("@")[1]) 
 Sent Total = $(0 + $total_msgsent[$address]) 
