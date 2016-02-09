@@ -21,6 +21,14 @@ Write-Host " Start Date: Format Like > MM/DD/YYYY 12:00 AM  :"  -nonewline
 $startdate = read-host
 Write-Host " End Date: Format Like > MM/DD/YYYY 11:59 PM  :"  -nonewline
 $EndDate = read-host
+
+#Write information about the script 
+Write-Host  " "
+Write-Host  " "
+Write-Host  " "
+Write-Host " Please note when looking at this report. 1 Email sent to 5 people is counted as 5 Emails." -foregroundcolor magenta
+write-host " So when looking at the Report see column P for Unique Emails Sent, that email with 5 recipients is counted as 1" -foregroundcolor magenta
+
  
 $today = get-date 
 $rundate = $($today.adddays(-1)).toshortdatestring() 
