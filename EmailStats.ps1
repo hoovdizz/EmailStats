@@ -122,7 +122,7 @@ foreach ($ht in $hts){
  
     Write-Host "`nStarted processing $ht" 
  
-    get-messagetrackinglog -Server $ht -Start "01/15/2016 12:00 AM" -End "01/15/2016 11:59 PM" -resultsize unlimited | 
+    get-messagetrackinglog -Server $ht -Start $startdate -End $enddate -resultsize unlimited | 
     time_pipeline |%{ 
      
      
